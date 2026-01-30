@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>📄 Job Application Tracker</h2>
+
+    <input id="company" placeholder="Company name">
+    <select id="status">
+      <option>Applied</option>
+      <option>Interview</option>
+      <option>Rejected</option>
+    </select>
+    <input type="date" id="date" placeholder="Application date">
+    <input id="notes" placeholder="Notes (optional)">
+
+    <button onclick="addJob()">Add Application</button>
+
+    <select id="filter" onchange="render()">
+      <option value="All">All Statuses</option>
+      <option>Applied</option>
+      <option>Interview</option>
+      <option>Rejected</option>
+    </select>
+
+    <ul id="jobs"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+<footer>
+  © Lethabo Mushi. All rights reserved.
+</footer>
+
+</html>

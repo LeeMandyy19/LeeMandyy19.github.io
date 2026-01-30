@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>💰 Expense Tracker</h2>
+
+    <input id="name" placeholder="Expense name">
+    <input id="amount" type="number" placeholder="Amount (R)">
+    <select id="category">
+      <option>Food</option>
+      <option>Transport</option>
+      <option>Bills</option>
+      <option>Other</option>
+    </select>
+
+    <button onclick="addExpense()">Add Expense</button>
+
+    <select id="filter" onchange="render()">
+      <option value="All">All Categories</option>
+      <option>Food</option>
+      <option>Transport</option>
+      <option>Bills</option>
+      <option>Other</option>
+    </select>
+
+    <ul id="list"></ul>
+    <h3 id="totalText">Total: R<span id="total">0</span></h3>
+  </div>
+<footer>
+  © Lethabo Mushi. All rights reserved.
+</footer>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
